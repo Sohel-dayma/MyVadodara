@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter, HashRouter } from 'react-router-dom';
 import Services from './components/pages/Services';
 import SignUp from './components/pages/SignUp';
 import Destination from './components/pages/Destination';
@@ -11,7 +11,7 @@ import Login from './components/pages/Login';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <div className='App'>
       <Navbar />
       <ScrollToTop>
@@ -24,7 +24,7 @@ function App() {
         </Routes>
       </ScrollToTop>
     </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
